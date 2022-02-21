@@ -1,0 +1,20 @@
+dataset:
+  name: hop1_cocur_bip_hist50
+  size: L
+  root_path: ${env:MINDWD}/data/${dataset.size}/${dataset.name}
+  result_path: ${env:MINDWD}/data/${dataset.size}/result/
+  train: ${dataset.root_path}/training_set_dist
+  valid: ${dataset.root_path}/valid_set_dist
+  valid_sample: ${dataset.root_path}/valid_set.sample.txt
+  test: ${dataset.root_path}/test_set_dist
+  vocab_subdir: data/new_vocab_graph
+  ent_vocab: ${env:MINDWD}/${dataset.vocab_subdir}/ent_vocab.bin
+  word_vocab: ${env:MINDWD}/${dataset.vocab_subdir}/word_vocab.bin
+  graph: ${env:MINDWD}/${dataset.vocab_subdir}/graph.bin
+  word_embedding: ${env:MINDWD}/${dataset.vocab_subdir}/word_embeddings.bin.npy
+  title_embedding: ${env:MINDWD}/data/${dataset.size}/news_title.npy
+  max_news_len: 20
+  max_hist_len: 50
+  train_split_cnt: 40
+  valid_split_cnt: 4
+  test_split_name: p0

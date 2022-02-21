@@ -1,0 +1,4 @@
+hydra:
+  run:
+    # Output directory for normal runs
+    NDdir: ${env:MINDWD}/outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}

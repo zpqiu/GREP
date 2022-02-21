@@ -1,0 +1,7 @@
+logger:
+  name: basic
+  save_dir: ${env:MINDWD}/outputs
+  project: base_title_cate
+  log_freq: 10
+  project_name: mind
+  experiment_name: base_title_cate

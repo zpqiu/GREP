@@ -1,0 +1,12 @@
+model:
+  name: kg_base
+  model_name: title_cross
+  word_embedding_size: 300
+  ent_embedding_size: 300
+  conv_hidden_size: 300
+  hidden_size: 300
+  dropout: 0.2
+  neg_count: 4
+  transformer:
+    heads_num: 6
+    feedforward_size: 600

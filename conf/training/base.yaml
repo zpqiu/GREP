@@ -1,0 +1,12 @@
+training:
+  name: base_training
+  batch_size: 128
+  learning_rate: 0.0001
+  epochs: 10
+  gpus: 4
+  accumulate: 1
+  seed: 7
+  master_port: 9237
+  model_save_path: ${env:MINDWD}/outputs/${dataset.size}/${model.name}@${dataset.name}/
+  metrics: group_auc || mean_mrr || ndcg@5;10
+  validate_epoch: 1
